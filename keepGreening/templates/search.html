@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Search</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="container-fluid header">
+    <div class="row">
+        <nav class="navbar navbar-expand navbar-light">
+            <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                    src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".index") }}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for(".search") }}">Search </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h1 class="row search-title">Which plant where?</h1>
+    <div class="form-row row align-items-center">
+        <div class="col-10">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput"
+                   placeholder="Please enter you post code. e.g. 3000">
+        </div>
+        <button type="submit" class="col-2 btn btn-success mb-2 green-button-2" id="search-button">Search</button>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <button type="button" class="learn-more btn btn-success green-button-2 dropdown-toggle col-12"
+                id="show-options">
+            Advanced Search Options
+        </button>
+    </div>
+    <div class="row search-options">
+        <div class="col-lg-3 filter-icon">
+            <div><img src="{{ url_for("static", filename="images/shade_icon.png") }}" alt=""></div>
+            <ul class="filter-options">
+                <li><input class="option-checkbox" type="checkbox" id="sunFull"> Full Sun</li>
+                <li><input class="option-checkbox" type="checkbox" id="sunPartial"> Partial Sun</li>
+                <li><input class="option-checkbox" type="checkbox" id="shadeFull"> Full Shade</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 filter-icon">
+            <div><img src="{{ url_for("static", filename="images/water_icon.png") }}" alt=""></div>
+            <ul class="filter-options">
+                <li><input class="option-checkbox" type="checkbox" id="waterMedium"> Medium</li>
+                <li><input class="option-checkbox" type="checkbox" id="waterLow"> Low</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 filter-icon">
+            <div><img src="{{ url_for("static", filename="images/color_icon.png") }}" alt=""></div>
+            <ul class="filter-options">
+                <li><input class="option-checkbox" type="checkbox" id="colorGreen"> Green</li>
+                <li><input class="option-checkbox" type="checkbox" id="colorYellow"> Yellow</li>
+                <li><input class="option-checkbox" type="checkbox" id="colorOther"> Other</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 filter-icon">
+            <div><img src="{{ url_for("static", filename="images/season_icon.png") }}" alt=""></div>
+            <ul class="filter-options">
+                <li><input class="option-checkbox" type="checkbox" id="seasonSpring"> Spring</li>
+                <li><input class="option-checkbox" type="checkbox" id="seasonSummer"> Summer</li>
+                <li><input class="option-checkbox" type="checkbox" id="seasonAutumn"> Autumn</li>
+                <li><input class="option-checkbox" type="checkbox" id="seasonWinter"> Winter</li>
+            </ul>
+        </div>
+        <div class="col-12">
+            <button type="button" class="learn-more btn btn-success green-button-2 col-2 col-sm-3"
+                    id="clear-filter">
+                Clear Filter
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid result-button-container"></div>
+
+<div class="container-fluid" id="result-container">
+
+</div>
+
+<div class="container-fluid empty-container"></div>
+
+
+<div class="fixed-bottom">
+    <div class="container">
+        <h3 class="row">These plants can absorb&nbsp;<span id="carbon-absorb">0</span>kg carbon in a year.</h3>
+        <h3 class="row">It's equal to the carbon emission of&nbsp;<span id="car-emmit">0</span>&nbsp people in a year.
+        </h3>
+    </div>
+</div>
+
+
+</body>
+</html>
