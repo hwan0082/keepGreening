@@ -1,0 +1,366 @@
+.main {
+    min-height: calc(100vh - 50px);
+}
+
+footer {
+    height: 50px;
+    background: rgb(113, 185, 115);
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#navbarNav .navbar-nav .nav-item {
+    margin: 10px;
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link:hover {
+    color: rgb(113, 185, 115);
+}
+
+#navbarNav .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 16px;
+}
+
+.navbar-nav {
+    font-weight: bold;
+}
+
+#navbarNav .navbar-nav .active {
+    border-bottom: 3px solid rgb(113, 185, 115);
+}
+
+#navbarNav .navbar-nav .active .nav-link {
+    color: rgb(113, 185, 115);
+}
+
+.navbar-brand img {
+    height: 70px;
+}
+
+.carousel-caption .col-5 h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    height: 370px;
+}
+
+.main-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.image-container {
+    text-align: center;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    height: 150px;
+}
+
+.main-section .col-4 {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.main-section .col-4 .sub-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-section-2 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-section-2 p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-section-2 .fake-video {
+    height: 500px;
+    background: green;
+}
+
+.main-section-2 .row a {
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    margin: 0 auto;
+}
+
+.learn-more {
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.banner-button {
+    color: white;
+    border: 1px solid #28a745;
+    font-weight: bold;
+    background: #28a745;
+}
+
+
+.green-button {
+    color: white;
+    background: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    font-weight: bold;
+}
+
+.green-button-2 {
+    color: white;
+    background: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    font-weight: bold;
+    box-shadow: 1px 1px 4px 0px grey;
+}
+
+.search-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plant-type-options {
+    margin-bottom: 10px;
+}
+
+.search-options .options-td img {
+    height: 25px;
+    margin: 0 auto;
+}
+
+.search-options .col-12 .row {
+    margin: 0;
+}
+
+.search-options .options-td {
+    text-align: center;
+}
+
+#send-email {
+    margin-left: 5px;
+}
+
+.email-error-span {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.filter-basic {
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    margin-right: 5px;
+}
+
+.filter-button-unselected {
+    background: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    opacity: 40%;
+}
+
+.filter-button-unselected:hover {
+    background: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    color: white;
+    opacity: 40%;
+}
+
+.filter-button-selected {
+    background: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    color: white;
+    opacity: 100%;
+}
+
+.filter-button-selected:hover {
+    color: white;
+}
+
+.filter-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.filter-icon div img {
+    display: block;
+    margin: 0 auto;
+}
+
+.option-checkbox {
+    border: 2px solid rgb(182, 219, 185);
+}
+
+.option-checkbox:checked {
+    background-color: rgb(182, 219, 185);
+}
+
+.plan-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plan-title h2 {
+    text-align: center;
+    margin-left: 10px;
+}
+
+#clear-filter {
+    float: right;
+}
+
+#back-to-search {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.manipulation {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(113, 185, 115);
+}
+
+.plus {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(113, 185, 115);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgb(113, 185, 115);
+    line-height: 20px;
+}
+
+.minus {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(113, 185, 115);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid rgb(113, 185, 115);
+    line-height: 20px;
+}
+
+.input-quantity {
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset {
+    width: auto;
+    border-radius: 15px;
+}
+
+.pagination .page-item .page-link {
+    color: rgb(113, 185, 115);
+    border: 1px solid rgb(113, 185, 115);
+    font-weight: bold;
+}
+
+.pagination .page-item .page-link:hover {
+    color: white;
+    background: rgb(113, 185, 115);
+}
+
+.pagination .page-item .active {
+    color: white;
+    background: rgb(113, 185, 115);
+}
+
+.empty-container {
+    height: 10px;
+}
+
+.fixed-bottom {
+    background: rgb(113, 185, 115);
+    padding-top: 10px;
+    width: 100%;
+    color: white;
+}
+
+.fixed-bottom .row {
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.fixed-bottom .col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-bottom .plant-tips-redirect {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.fixed-top {
+    background: white;
+}
+
+.loader {
+    height: 100px;
+    width: 100px;
+    border: 15px solid rgb(205, 226, 202);
+    border-top: 15px solid rgb(129, 183, 122);
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(113, 185, 115);
+}
+
+.back-to-top a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

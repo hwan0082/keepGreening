@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Search</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+{#    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>#}
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="container-fluid header">
+    <div class="row">
+        <nav class="navbar navbar-expand navbar-light">
+            <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                    src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".index") }}">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for(".search") }}">Search </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid search-options-container">
+    <h1 class="row search-title">Which plant where?</h1>
+    <div class="form-row row align-items-center">
+        <div class="col-10">
+            <label class="sr-only" for="inlineFormInput">Name</label>
+            <input type="text" class="form-control mb-2" id="inlineFormInput"
+                   placeholder="Please enter you post code. e.g. 3000">
+        </div>
+        <button type="submit" class="col-2 btn btn-success mb-2 green-button-2" id="search-button">Search</button>
+    </div>
+    <div class="row" style="margin-top: 10px">
+        <button type="button" class="learn-more btn btn-success green-button-2 dropdown-toggle col-12"
+                id="show-options">
+            Advanced Search Options
+        </button>
+    </div>
+    <div class="row search-options">
+        <table class="col-12">
+            <tr class="row">
+                <td class="options-td col-2">
+                    <img src="{{ url_for("static", filename = "images/season_icon.png") }}" alt="">
+                    <h6>Blooming Season</h6>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="spring">Spring</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="summer">Summer</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="autumn">Autumn</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="winter">Winter</div>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="row">
+                <td class="options-td col-2">
+                    <img src="{{ url_for("static", filename = "images/sun_icon.png") }}" alt="">
+                    <h6>Sunlight</h6>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="full-sun">Full Sun</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="partial-sun">Partial Sun</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="full-shade">Full Shade</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="row">
+                <td class="options-td col-2">
+                    <img src="{{ url_for("static", filename = "images/water_icon.png") }}" alt="">
+                    <h6>Water</h6>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="low">Low</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="medium">Medium</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="high">High</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="row">
+                <td class="options-td col-2">
+                    <img src="{{ url_for("static", filename = "images/color_icon.png") }}" alt="">
+                    <h6>Color</h6>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="red">Red</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="pink">Pink</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="orange">Orange</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="yellow">Yellow</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="green">Green</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="purple">Purple</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="mauve">Mauve</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="white">White</div>
+                </td>
+                <td>
+                    <div class="btn filter-basic filter-button-unselected" id="black">Black</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row plant-type-options">
+        <div class="btn filter-basic filter-button-unselected" id="ground-covers">Ground Covers</div>
+        <div class="btn filter-basic filter-button-unselected" id="small-shrubs">Small Shrubs</div>
+        <div class="btn filter-basic filter-button-unselected" id="medium-shrubs">Medium Shrubs</div>
+        <div class="btn filter-basic filter-button-unselected" id="large-shrubs">Large Shrubs</div>
+        <div class="btn filter-basic filter-button-unselected" id="trees">Trees</div>
+        <div class="btn filter-basic filter-button-unselected" id="grasses">Grasses</div>
+        <div class="btn filter-basic filter-button-unselected" id="climbers">Climbers</div>
+    </div>
+</div>
+
+<div class="container-fluid result-button-container"></div>
+
+<div class="container-fluid" id="result-container">
+
+</div>
+
+<div class="fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <h4>These plants can absorb&nbsp;<span id="carbon-absorb">0</span>kg carbon in a year.</h4>
+                <h4>
+                    It's equal to the carbon emission of&nbsp;<span id="car-emmit">0</span>&nbsp km of car drive.
+                </h4>
+            </div>
+            <div class="col-3">
+                <button class="btn learn-more btn-success view-detail">View Detail</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

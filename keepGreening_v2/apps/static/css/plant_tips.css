@@ -1,0 +1,46 @@
+.tips-container .row{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.tips-container .row .col-5 .row a{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.tips-container .row .col-5 p{
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.col-7 .col-12{
+    height: 400px;
+    overflow: hidden;
+}
+
+.tips-container .row .col-5{
+    text-align: center;
+}
+
+.tips-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(113, 185, 115);
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tips-title h2 {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tips-title p {
+    color: white;
+    text-align: center;
+}

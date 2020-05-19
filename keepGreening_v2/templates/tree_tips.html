@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Planting Tips</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/tips.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row tips-title">
+            <a class="btn green-button btn-success learn-more btn-success"
+               href="{{ url_for(".gardening_tips") }}">Back</a>
+            <h2>Tips for growing trees</h2>
+        </div>
+    </div>
+    <div class="container-fluid article-container">
+        <div class="row">
+            <h6 class="col-12">Planting trees for long-term benefits</h6>
+            <p class="col-12">Inspect your tree at the nursery or garden center before buying it to make sure that it is
+                healthy and well
+                formed. If the tree is in a container, check for matted roots by sliding off the container or feeling
+                down
+                the
+                side of it. Roots should penetrate to the edge of the root ball, but not densely circle the inside of
+                the
+                container or grow through drain holes.</p>
+            <div class="col-11 sub-point-container">
+                <p class="col-12">1. Avoid trees with dense surface roots that circle the trunk and may girdle the tree.
+                    Gently move the trunk
+                    back and forth in the container. If it wiggles and the soil loosens, it may not be very well
+                    anchored to
+                    the
+                    container soil.</p>
+                <p class="col-12">2. Dig the planting hole the same depth as the root ball so that the tree will not
+                    settle
+                    after it is
+                    watered in. The crown of the tree should be slightly above ground level. Make the hole two to three
+                    times as wide as
+                    the container. Backfill with the native soil unless it is very sandy, in which case you may want to
+                    add
+                    composted organic matter such as peat moss or shredded back.</p>
+                <p class="col-12">3. Use the extra backfill to build a berm outside the root ball that is 15cm high and
+                    1m
+                    in diameter. Soak
+                    the tree, and gently rock it to settle it in. Cover the basin with a 10-cm thick layer of mulch, but
+                    avoid
+                    placing mulch against the tree trunk. Water the new tree twice a week for the first month and weekly
+                    thereafter for
+                    the next couple growing seasons.</p>
+                <p class="col-12">4. Inspect your tree several times a year, and contact a local landscape professional
+                    if
+                    problems develop.
+                    If your tree needed staking to keep it upright, remove the stake and ties as soon as the tree can
+                    hold
+                    itself
+                    up. Reapply mulch and irrigate the tree as needed. Prune the young tree to maintain equally spaced
+                    scaffold
+                    branches and to remove branches that cross and rub.</p>
+            </div>
+
+            <h6>Planting trees for solar control.</h6>
+            <div class="col-11 sub-point-container">
+                <p class="col-12">1. In midsummer, the sun shines on the northeast and east sides of buildings in the
+                    morning, passes over the
+                    roof near midday, then shines on the west and northwest sides in the afternoon. Planting trees on
+                    the
+                    west
+                    and northwest sides of a house are the best solution to prevent the house be too hot. The second
+                    best
+                    position
+                    is east side.</p>
+                <p class="col-12">2. In winter, trees located to shade south walls can block winter sunshine and
+                    increase
+                    heating costs, so do
+                    not plant evergreen trees that will block southern exposures and solar collectors.</p>
+                <p class="col-12">3. To maximum summer shade and minimize winter shade, locate trees about 3 to 6 meter
+                    south of the home.
+                    Although the closer a tree is to the home the more shade it provides, the roots of trees that are
+                    too
+                    close
+                    can damage the foundation.</p>
+                <p class="col-12">4. Paved patios and driveways can become heat sinks that warm the home during the day.
+                    Shade trees can make
+                    them cooler and more comfortable spaces.</p>
+                <div class="col-12">
+                    <div class="row"><img class="col-8"
+                                          src="{{ url_for("static", filename = "images/tree_tips/trees_01.png") }}"
+                                          alt="">
+                    </div>
+                </div>
+                <p class="col-12">5. Shading your air conditioner can reduce its energy use, but do not plant vegetation
+                    so
+                    close that it will
+                    obstruct the flow of air around the unit.</p>
+                <p class="col-12">6. Keep trees away from overhead power lines and do not plant directly above
+                    underground
+                    water and sewer
+                    lines. Contact your local utility company before planting to determine where underground lines are
+                    located and
+                    which tree species will not grow into power lines.</p>
+            </div>
+
+            <h6>Planting trees for wind control.</h6>
+            <div class="col-11 sub-point-container">
+                <p class="col-12">1. Locate rows of trees perpendicular to the primary wind direction -- usually along
+                    the
+                    north and west
+                    sides of the property.</p>
+                <p class="col-12">2. The windbreak row need to be longer than the building because the wind speed
+                    increases
+                    at the edge of the
+                    windbreak. Ideally, the windbreak is planted upwind about 15m from the building and consists of
+                    dense
+                    evergreens that will grow to twice the height of the building they shelter.</p>
+                <div class="col-12">
+                    <div class="row"><img class="col-8"
+                                          src="{{ url_for("static", filename = "images/tree_tips/trees_02.gif") }}"
+                                          alt="">
+                    </div>
+                </div>
+                <p class="col-12">3. Avoid locating windbreaks that will block sunlight to south and east walls. Trees
+                    should be spaced close
+                    enough to form a dense screen, but not so close that they will block sunlight to each other, causing
+                    lower
+                    branches to self-prune.</p>
+                <p class="col-12">4. Most conifers can be spaced about 2m on center. If there is room for two or more
+                    rows,
+                    then space rows 3
+                    to 4m apart.</p>
+            </div>
+
+            <h6>Basic Tree Planting Tips and Steps</h6>
+            <div class="col-11 sub-point-container">
+                <h6 class="col-12">1. Unpot the Tree</h6>
+                <p class="col-12">Don't let the roots or rootball dry out. Don't let the roots or rootball break. Your
+                    plant
+                    either will be
+                    "bare-rooted" and wrapped in some sort of protective substance or will come with the roots in a ball
+                    of
+                    dirt
+                    in some kind of container to hold it together — a peat pot, burlap, wire basket or bag. You have to
+                    get
+                    as much
+                    of the wrapping off as possible without actually harming the rootball. This may have you struggling
+                    with
+                    knives, wire cutters, etc. Untreated burlap can, if necessary, be planted with the tree.</p>
+                <h6 class="col-12">2. Double-Check Hole Depth.</h6>
+                <p class="col-12">Do this by setting the tree in the hole to see how it fits. The "collar" (or "crown"
+                    or
+                    "root flare") should
+                    be just at soil level or a little above (to allow for mulch). Usually it's easy to see because
+                    you'll be
+                    looking for the same soil line that the tree had at the nursery. Trees planted too deep can die
+                    within a
+                    few years,
+                    or develop problems as many as 15 years later.</p>
+                <h6 class="col-12">3. Set Tree in Hole</h6>
+                <p class="col-12">Then spread out the roots. If you see any girdling, damaged, or circling roots, cut
+                    them
+                    off. Try to lay the
+                    roots out in a way that they make good, straight contact with their new soil.</p>
+                <h6 class="col-12">4. Fill in Dirt</h6>
+                <p class="col-12">Place dirt over and around it. Don't add anything to the dirt you're going to put back
+                    into the hole to
+                    cover the tree roots — not peat moss, not fertilizer. It does more harm than good to spot fertilize
+                    a
+                    newly
+                    planted tree. This is because it tends to make the soil around the tree roots of a significantly
+                    different
+                    composition from the soil next to it. Water doesn't move normally across the difference. The result
+                    is a
+                    tree that's
+                    liable to be abnormally wet, or too dry. Don't bury incompletely decomposed organic litter around
+                    the
+                    seedling tree
+                    either. This can mess up the pH, the nutrient balances and the populations of microscopic soil
+                    creatures. On
+                    the other hand, fully composted organic material that is evenly distributed across the top of the
+                    ground
+                    in your
+                    young tree's area could be helpful. Stomp dirt all around it to be firm and create a depression into
+                    which
+                    water can settle.</p>
+                <h6 class="col-12">5. The First Soaking</h6>
+                <p class="col-12">When soil is dry, watering the tree as soon as possible after planting is critical for
+                    its
+                    survival. Use
+                    water also for the final settling of the soil. If additional settling occurs, add more soil, but
+                    don't
+                    step on the
+                    wet soil around the tree.</p>
+                <h6 class="col-12">6. Mulch</h6>
+                <p class="col-12">Mulching the surface of the soil around your newly planted trees two to four inches
+                    deep
+                    does help them by
+                    controlling competition and gradually releasing nutrients. In nature, trees mulch themselves every
+                    fall.
+                    By
+                    keeping weeds away, retaining water and moderating the soil temperature, mulch improves the chances
+                    of
+                    survival for your tree. But never let mulch pile up against the trunk. After mulching the planting
+                    pit,
+                    brush back
+                    the mulch that is in contact with the trunk.</p>
+                <h6 class="col-12">7. Avoid Staking</h6>
+                <p class="col-12">Natural flexing is necessary for the plant to develop a normally strong trunk and
+                    roots.
+                    Use staking only if
+                    needed to hold the tree up until the roots have become established (usually within a year). To
+                    stake,
+                    use
+                    one or two wooden stakes (pipe or rebar are too hard to pull out), which have been pounded firmly
+                    into
+                    undisturbed
+                    soil. Place the tie about a third of the way up the tree in order to allow maximum trunk movement.
+                    Use
+                    soft,
+                    flat tie material (inner tube, flat soaker garden hose, commercial products). Never use straight
+                    twine
+                    or
+                    electric or any other type of wire against a trunk. Remove stakes and ties as soon as possible.
+                    Trees
+                    are
+                    frequently girdled by ties that people forgot to take off.</p>
+                <h6 class="col-12">8. Prune</h6>
+                <p class="col-12">But do not prune the tree top to "compensate for root loss." That's a myth. You may
+                    prune
+                    to take off
+                    broken, rubbing and weak branches, but try not to remove more than 1/5 of the branches.</p>
+                <h6 class="col-12">9. Dirt Dam</h6>
+                <p class="col-12">Build a circular dirt dam to create a basin effect around the outer edge of your tree
+                    planting area to
+                    retain water. Trees need water that soaks in deeply to establish good root systems. Water trees at
+                    the
+                    first year
+                    or two and during a drought. Let the root zone dry out between waterings unless your tree is a swamp
+                    variety.
+                    Five to 15 gallons a week is typical.</p>
+                <h6 class="col-12">10. Care After Planting</h6>
+                <p class="col-12">Young trees benefit if they are irrigated, fertilized and weeded, being a crop like
+                    any
+                    other. Water them at
+                    least twice a week. Regularly rescue them from weed and grass competitors. Or, easier and better
+                    yet,
+                    mulch
+                    around them so thoroughly the competition doesn't get through. If your trees don't grow well and
+                    aren't
+                    an
+                    obviously healthy green color, they need fertilizer. Spread some manure from your barnyard. However,
+                    there's
+                    such a thing as too much nitrogen, so spread it in reasonable amounts.</p>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top btn-success">
+        <a href="#">BACK TO TOP</a>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Planting Tips</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/tips.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row tips-title">
+            <a class="btn green-button btn-success learn-more btn-success"
+               href="{{ url_for(".gardening_tips") }}">Back</a>
+            <h2>19 Tips to start gardening</h2>
+        </div>
+    </div>
+    <div class="container-fluid article-container">
+        <div class="row">
+            <h6 class="col-12">1. Start your garden with good soil</h6>
+            <p class="col-12">Work in compost, manure or dried peat moss for nutrient-rich planting beds. Amended soil
+                is lighter, drains
+                well, makes for easy weeding and allows roots to establish themselves more quickly.</p>
+            <h6 class="col-12">2. Shrink the size of your lawn</h6>
+            <p class="col-12">One of the best gardening tips that landscapers can offer is to shrink the size of your
+                lawn. You'll be amazed
+                at how much time you'll save on lawn chores simply by reducing the grass-covered areas in your yard.
+                Combine
+                trees, shrubs, boulders and decorative mulches to fashion eye-catching, maintenance-free island beds in
+                your
+                front and back yards.</p>
+            <h6 class="col-12">3. Keep garden tools handy</h6>
+            <p class="col-12">Stash a spare set of hand tools and garden twine in a waterproof container in your garden.
+                That way, when you
+                spot weeds, broken rose canes or a stem that needs tying up, you won't have to run to the garage or
+                potting shed
+                for supplies.</p>
+            <div class="col-12">
+                <div class="row"><img class="col-8"
+                                      src="{{ url_for("static", filename = "images/beginner_tips/beginner_01.jpg") }}"
+                                      alt=""></div>
+            </div>
+            <h6 class="col-12">4. Play in the rain</h6>
+            <p class="col-12">There's no better time to visit a garden centre than during a cloudburst. Nurseries are
+                less crowded, lines are
+                shorter and staff members are more available to answer your questions. Once the rain eases, go out and
+                pull
+                weeds—even clumps of crabgrass and deep-rooted dandelions pull easily out of wet soil.</p>
+            <h6 class="col-12">5. Grow a container garden</h6>
+            <p class="col-12">When you can't get anything to grow beneath trees or along fences, set up a multi-tiered
+                container garden in the
+                shady location. Plant shade-loving perennials and compact shrubs in appropriately sized containers; set
+                the
+                containers on stands in varying heights. Or use simple green pots that blend into the background, and
+                won't
+                compete with the flowering show.</p>
+            <h6 class="col-12">6. See what works in your neighbour's garden</h6>
+            <p class="col-12">When walking or driving, take note of interesting plants and plant combinations. Write
+                them down and take the
+                list with you to the nursery—having an itemized list will speed up your shopping trips and reduce the
+                urge to
+                impulse-buy.</p>
+            <h6 class="col-12">7. Fertilize smarter—not harder</h6>
+            <p class="col-12">Nourish gardens and containers with time-release fertilizers that continue feeding for
+                long periods of time.
+                That way, you won't have to fertilize as frequently.</p>
+            <h6 class="col-12">8. Prune evergreens later in the season</h6>
+            <p class="col-12">Wait to prune evergreens such as yews and boxwood until they've produced most of their new
+                growth. As a result,
+                you won't have to prune them again until next year.</p>
+            <h6 class="col-12">9. Add fresh mulch to your garden</h6>
+            <p class="col-12">Add fresh mulch to your gardens every year. A 2- to 3-inch layer of mulch keeps weeds from
+                sprouting and helps
+                the soil retain water, so you'll be weeding and watering less often.</p>
+            <h6 class="col-12">10. Gardening tips for hostas</h6>
+            <p class="col-12">Divide and transplant hostas as soon as you see leaf tips breaking through the
+                ground—since the stems and leaves
+                have yet to unfurl, it'll be easy to cut the root-ball with a serrated knife. The planted divisions will
+                leaf
+                out beautifully in their new sites. You can divide and move fully leafed-out hostas, but you're likely
+                to break
+                off leaves and stems in the process, which results in ragged-looking plants.
+            </p>
+            <h6 class="col-12">11. Consider colourful garden tools</h6>
+            <p class="col-12">Don't waste a second searching for misplaced garden tools. Buy trowels, cultivators, forks
+                and pruners with
+                bright red or orange handles so you can quickly spot them amid the greenery.</p>
+            <div class="col-12">
+                <div class="row"><img class="col-8"
+                                      src="{{ url_for("static", filename = "images/beginner_tips/beginner_02.jpg") }}"
+                                      alt=""></div>
+            </div>
+            <h6 class="col-12">12. Plant vegetables in clear sight</h6>
+            <p class="col-12">Plant vegetables and herbs near your back or front door. Since you'll see them often,
+                you'll remember to keep
+                them watered. And they'll be nearby when you need dinner fixings.</p>
+            <h6 class="col-12">13. Maintain your gardening tools</h6>
+            <p class="col-12">Make sure your tools are clean and sharp—they'll last longer and work better in the
+                garden. Use ergonomically
+                designed tools, kneepads, or kneeling mats to lessen stress on your joints—pain-free bodies also work
+                more
+                efficiently in the garden. In turn, gardening can reward you with these health benefits.</p>
+            <h6 class="col-12">14. Take inventory of your garden</h6>
+            <p class="col-12">Make a running list of newly-added plants and their locations—this will help you remember
+                what you planted
+                where, which will prevent the inadvertent weeding (and replacing) of a "good plant." Save perennial
+                plant tags
+                and store them near your favourite how-to gardening book to keep all your gardening tips and planting
+                information in one spot.</p>
+            <h6 class="col-12">15. Invest in native plants</h6>
+            <p class="col-12">Buy improved varieties of plants and grasses that are native to your region. They'll
+                thrive with very little
+                care and are likely to be the best-looking plants in your garden.</p>
+            <h6 class="col-12">16. Dig once, plant many</h6>
+            <p class="col-12">When you've got a bag of tulip or lily bulbs to plant, or when using annuals to edge a
+                border, dig a large,
+                single planting hole instead of many smaller holes. Make sure it's large enough for all the bulbs or
+                plants to
+                prevent overcrowding.</p>
+            <h6 class="col-12">17. Be prepared</h6>
+            <p class="col-12">At the beginning of the season, stock up on gardening supplies like garden twine, twist
+                ties, garden gloves,
+                plant supports, plant markers and bags of compost to eliminate garden centre runs and the long lines on
+                busy
+                gardening days.</p>
+            <h6 class="col-12">18. Take a garden tour (in your own back yard)</h6>
+            <p class="col-12">Walk around your garden every day and check plants for pests and diseases—the sooner you
+                spot a problem, the
+                sooner you can take curative measures, which means less work later.</p>
+            <h6 class="col-12">19. Let plants do their thing</h6>
+            <p class="col-12">Choose plant varieties that readily self-seed, such as corydalis, larkspur and purple
+                coneflower, or that
+                quickly naturalize, such as daffodils and daylilies, to fill out borders inexpensively.</p>
+        </div>
+    </div>
+    <div class="back-to-top btn-success">
+        <a href="#">BACK TO TOP</a>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

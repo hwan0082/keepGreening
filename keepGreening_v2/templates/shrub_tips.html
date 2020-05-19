@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Planting Tips</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/tips.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row tips-title">
+            <a class="btn green-button btn-success learn-more btn-success"
+               href="{{ url_for(".gardening_tips") }}">Back</a>
+            <h2>Step by step guide to establishing Australian native shrubs</h2>
+        </div>
+    </div>
+    <div class="container-fluid article-container">
+        <div class="row">
+            <p class="col-12">The Australian flora has established a reputation as a tough, drought tolerant group of
+                plants
+                that are very low
+                maintenance in the garden. Whilst this is generally true it is extremely important to realize that a bit
+                of
+                tender loving care during the first few weeks of establishment will give your native shrubs a flying
+                start.</p>
+
+            <p class="col-12">All types of shrubs will usually have received ideal conditions while they are in the
+                production nursery. This
+                generally means daily watering and constant nutrient levels to ensure rapid growth before they go to the
+                retail
+                outlet. It is absolutely vital that these plants are gradually weaned off these ideal growing conditions
+                once
+                they go into the ground. If they are suddenly cut off from regular moisture levels during hot dry days
+                water
+                can
+                actually be drawn out of the root ball to the surrounding soil and result in severe wilting or even
+                death of
+                the
+                plant. Consequently, following a series of basic steps will lessen transplant shock and allow the roots
+                to
+                penetrate quickly into the soil and find their own moisture rather than relying on irrigation.
+            </p>
+
+            <div class="col-12">
+                <div class="row"><img class="col-8"
+                                      src="{{ url_for("static", filename = "images/shrub_tips/shrub_01.jpg") }}" alt="">
+                </div>
+            </div>
+            <div class="col-11 sub-point-container">
+                <p class="col-12"><span style="font-weight: bold">1. </span>Plant selection - Ensure that the plant is
+                    not root bound. If the plant looks too big
+                    for its pot ask nursery
+                    staff to remove it from its pot so you can satisfy yourself. Also look for plants grown in
+                    containers
+                    that are
+                    designed to train the roots downwards
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">2. </span>Preparing the hole - If possible use a
+                    mattock or trowel (depending on the plant
+                    size) to dig a hole
+                    considerably bigger than the size the root ball. The idea is to have a few cm of loose soil around
+                    the
+                    root ball
+                    to make for much easier root penetration.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">3. </span>Saturating the root ball - One of the
+                    simplest and most effective things you can do
+                    to give your plant a good
+                    start is to completely submerge the root ball in a bucket of water before planting. This is
+                    especially
+                    critical
+                    during dry weather as is pouring some water into the empty planting hole.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">4. </span>Planting - Tease out any roots that may be
+                    curling around the inside of the pot and
+                    place the plant in the
+                    hole. It is important not to put organic matter into the base of the planting hole, particularly if
+                    it
+                    is a clay
+                    soil, as this can rob the roots of vital oxygen as the organic matter continues to break down.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">5. </span>Soil additives - Well rotted organic
+                    materials make excellent soil conditioners that
+                    will improve water and
+                    nutrient retention around the roots. It is, however, important to ensure a low phosphorus level for
+                    those native
+                    plants such as grevilleas, waratahs, banksias and acacias (to name a few). Reputable bagged soil
+                    conditioner
+                    products will be clearly labeled as to whether they are suitable. A home grown alternative is to use
+                    very well
+                    rotted cow and horse manure. Mix the well rotted organic material (and if the soil is likely to dry
+                    out
+                    regularly also use expanded water storing crystals) with the topsoil that is going to go around the
+                    roots in the
+                    top 15-20 cm of the planting hole. Then backfill the hole, firming the soil mix into the gaps.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">6. </span>Before watering the plant in form a saucer
+                    around the plant to retain water while it
+                    is soaking into the
+                    soil. This is particularly important for soils that allow only very slow percolation of water into
+                    the
+                    surface.
+                    Indeed, if this is the case then it is worth treating the topsoil with a wetting agent at planting
+                    time
+                    as well.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">7. </span>If you know that weeds are going to be a
+                    problem for you then multiple sheets of
+                    newspaper can be laid around
+                    the plant before covering in a 10-20cm thick layer of mulch. Coarse woody mulches are a good option
+                    as
+                    they not
+                    only help with water retention but also suppress weeds. Ensure that the base of the stem is kept
+                    clear
+                    of the
+                    newspaper and mulch for several cm.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">8. </span>Tip pruning is another must if the
+                    particular shrub you are planting lends itself to
+                    a dense, bushy habit.
+                    Simply pinch out the growing tips at planting time and repeat this every couple of months during the
+                    first year
+                    of growth. Not only does this keep the plant more compact, it also greatly increases flower
+                    production.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">9. </span>Staking is best avoided if at all possible.
+                    The stems of woody plants are naturally
+                    strengthened as they blow
+                    in the wind. If a plant has developed a leggy stem due to being packed in too tightly during its
+                    production and
+                    you have no alternative than to plant it like this then use three stakes in a triangle and secure
+                    the
+                    plant with
+                    a pliable soft material that will give support but still allow gentle movement of the stem in the
+                    wind.
+                    Regular
+                    tip pruning will also help the plant to create a more stable shape such that the stakes can be
+                    removed
+                    as soon
+                    as you are confident the plant is stable.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">10. </span>If frost protection is necessary then a
+                    temporary shelter of a tree guard or sheet
+                    of Hessian can be wrapped
+                    around the plant during winter. Products known as antitranspirants (eg Stressguard) can also be
+                    sprayed
+                    onto the
+                    foliage to minimize damage.
+                </p>
+
+                <p class="col-12"><span style="font-weight: bold">11. </span>If there is a lack of natural rainfall and
+                    you notice your plant wilting then
+                    supplementary watering is
+                    indicated. Upended cut down drink bottles or water spikes can be particularly useful to get water
+                    down
+                    to the
+                    root system if water penetration is difficult in your soil. It is extremely important to water
+                    deeply if
+                    supplementary watering is required as this will encourage the root system to grow downwards to seek
+                    out
+                    the
+                    natural moisture in the subsoil thus making the plant more self sufficient.
+                </p>
+            </div>
+
+            <p class="col-12">It should be pointed out that not every step is absolutely essential to success but we
+                have
+                mentioned a host of
+                ideas that can be used which will all add up to faster and more successful establishment of your native
+                shrubs.
+                Once they are off and growing most of them will be more than capable of looking after themselves.
+            </p>
+        </div>
+    </div>
+    <div class="back-to-top btn-success">
+        <a href="#">BACK TO TOP</a>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>

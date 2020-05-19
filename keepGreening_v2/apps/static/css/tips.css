@@ -1,0 +1,36 @@
+.tips-title h2{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tips-title{
+    margin-top: 20px;
+}
+
+img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.article-container .row .col-12{
+    padding: 0;
+}
+
+.sub-point-container{
+    margin: 0 auto;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(113, 185, 115);
+}
+
+.back-to-top a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

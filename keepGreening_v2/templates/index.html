@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-caption d-none d-md-block row">
+            <div class="col-5">
+                <h1>Use your garden to combat climate change</h1>
+                <p>
+                    keep greening is helping environment caring VIC residents to make their garden climate resilient.
+                </p>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="{{ url_for("static", filename = "images/banner1.png") }}"
+                     alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{ url_for("static", filename = "images/banner2.png") }}"
+                     alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="{{ url_for("static", filename = "images/banner3.png") }}"
+                     alt="Third slide">
+            </div>
+        </div>
+    </div>
+
+    <table class="container-fluid main-section">
+        <tr class="row">
+            <td class="col-4 image-container">
+                <img src="{{ url_for("static", filename="images/index_section1.png") }}" alt="">
+            </td>
+            <td class="col-4 image-container">
+                <img src="{{ url_for("static", filename="images/index_section2.png") }}" alt="">
+            </td>
+            <td class="col-4 image-container">
+                <img src="{{ url_for("static", filename="images/index_section3.png") }}" alt="">
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td class="col-4">
+                <p class="sub-title">How much contribution of your garden?</p>
+            </td>
+            <td class="col-4">
+                <p class="sub-title">Which plants should I plant?</p>
+            </td>
+            <td class="col-4">
+                <p class="sub-title">Want some professional gardening tips?</p>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td class="col-4">
+                <p>Want to know how much is carbon absorbed by your current or future garden? We can provide the
+                    number.</p>
+            </td>
+            <td class="col-4">
+                <p>Thinking of growing a plant in your garden? Why not use our Which Plant Where to find the right
+                    plants
+                    for you.</p>
+            </td>
+            <td class="col-4">
+                <p>Have no idea where or how to do gardening? We have some tips for you.</p>
+            </td>
+        </tr>
+
+        <tr class="row">
+            <td class="col-4 button-container">
+                <a class="btn learn-more btn-success link-button green-button" href="{{ url_for(".calculator") }}"
+                   style="color: white">
+                    How much carbon absorbed?
+                </a>
+            </td>
+            <td class="col-4 button-container">
+                <a class="btn learn-more btn-success link-button green-button" href="{{ url_for(".search") }}"
+                   style="color: white">
+                    Which plants should I plant?
+                </a>
+            </td>
+            <td class="col-4 button-container">
+                <a class="btn learn-more btn-success link-button green-button" href="#" style="color: white">
+                    Need help with gardening?
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="container-fluid main-section-2">
+        <p>
+            Do you know that your garden can be used to fight climate change?
+            <br>
+            KeepGreening is here to provide professional climate-friendly gardening information and suggestion.
+            <br>
+            Watch this video to learn more.
+        </p>
+        <div class="row">
+            <iframe style="margin: 0 auto" width="560" height="315" src="https://www.youtube.com/embed/nd80ccoP9is" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p style="margin-top: 20px">
+            We are here to help residents across Victoria to make plans for building better climate-friendly garden.
+            <br>
+            Click here to know more about us.
+        </p>
+        <div class="row" style="margin-top: 20px">
+            <a class="btn learn-more btn-success link-button green-button" href='{{ url_for(".about") }}'
+               style="color: white">
+                About Us
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+</body>
+</html>
+

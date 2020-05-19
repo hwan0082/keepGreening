@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Carbon Calculator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/calculator.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/calculator.js") }}"></script>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid calculator-container">
+        <div class="row calculator-title">
+            <h2>Know more about your garden</h2>
+            <p class="col-12">
+                Your garden can do more than you think <br>
+                Discover how much carbon your garden can absorb
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 calculator-option-container">
+                <div class="row">
+                    <h6 class="col-12" style="padding: 0">
+                        Enter the number of plant in your garden to know how much carbon can be absorbed by your garden
+                        in a year.
+                    </h6>
+                </div>
+                <div class="row">
+                    <table class="table table-responsive col-12">
+                        <thead>
+                        <tr>
+                            <th scope="col">Plant type</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">
+                                <button class="manipulation btn-success clear">Clear</button>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="plant-type">Large Deciduous</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Medium Deciduous</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Small Deciduous</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Large Evergreen</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Medium Evergreen</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Small Evergreen</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Large Shrub</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Medium Shrub</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Small Shrub</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plant-type">Grass (square meter)</td>
+                            <td>
+                                <button class="manipulation btn-success minus">-</button>
+                                <input type="text" class="input-quantity" value="0" disabled>
+                                <button class="manipulation btn-success plus">+</button>
+                            </td>
+                            <td>
+                                <button class="manipulation btn-success reset">Reset</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7 chart-container">
+                <h4>The carbon absorption of your garden is <span id="carbon-absorption">0.00 kg</span></h4>
+                <div id="chartdiv"></div>
+            </div>
+        </div>
+    </div>
+    {% if qty %}
+        <div id="planner-qty" style="visibility: hidden">
+            {{ qty }}
+        </div>
+    {% endif %}
+</div>
+<footer></footer>
+</body>
+</html>

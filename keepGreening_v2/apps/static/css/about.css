@@ -1,0 +1,84 @@
+.tips-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(113, 185, 115);
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tips-title h2 {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tips-title p {
+    color: white;
+    text-align: center;
+}
+
+.row .title-first{
+    color: rgb(113, 185, 115);
+    margin-bottom: 20px;
+}
+
+.row .title-second{
+    color: rgb(113, 185, 115);
+    text-align: right;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.row .title-third{
+    color: rgb(113, 185, 115);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.col-i{
+    display: block;
+    margin: 0 auto;
+}
+
+.section-first, .section-second, .section-third{
+    margin-bottom: 40px;
+}
+
+.section-first .col-i{
+    width: 300px;
+    height: 300px;
+}
+
+.section-second .col-i{
+    height: 300px;
+    width: 350px;
+}
+
+.section-third .col-10{
+    margin: 0 auto;
+}
+
+.section-third img{
+    margin: 0 auto;
+}
+
+.section-third .col-4 p{
+    text-align: center;
+}
+
+.section-third .col-12 p{
+    margin-bottom: 20px;
+}
+
+.section-third img{
+    margin-bottom: 20px;
+}
+
+.col-p img{
+    display: block;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KeepGreening - Planting Tips</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-grid.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap-reboot.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/bootstrap.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/main.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for("static", filename = "css/tips.css") }}">
+
+    <script src="{{ url_for("static", filename = "js/jquery-3.3.1.min.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.bundle.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/bootstrap.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/customized-functions.js") }}"></script>
+    <script src="{{ url_for("static", filename = "js/main.js") }}"></script>
+</head>
+<body>
+<div class="main">
+    <div class="container-fluid header">
+        <div class="row">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="{{ url_for(".index") }}"><img
+                        src="{{ url_for("static", filename = "images/logo.png") }}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".index") }}">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".search") }}">Search</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".calculator") }}">Calculator</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ url_for(".gardening_tips") }}">Gardening Tips</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for(".about") }}">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row tips-title">
+            <a class="btn green-button btn-success learn-more btn-success"
+               href="{{ url_for(".gardening_tips") }}">Back</a>
+            <h2>Tips for growing grass</h2>
+        </div>
+    </div>
+    <div class="container-fluid article-container">
+        <div class="row">
+            <h6 class="col-12">Environmentally friendly lawn care</h6>
+            <p class="col-12">To reduce the environmental impact of my lawn, you can use renewable energy to power an
+                electric mower and
+                edger. Electric mowers are quieter than fuel ones and, when using clean energy, they eliminate
+                pollution.
+                Use
+                the electric mower when the ground is soft, otherwise mow the lawn with an old hand-propelled mower.</p>
+            <h6 class="col-12">How to choose the right lawn</h6>
+            <p class="col-12">Successful lawns are a product of the right location, right type of grass and methodical
+                maintenance. Like any
+                crop, turf needs cultivation. The best lawns are established from scratch, and it's easier and
+                preferable to
+                replace a poor lawn than to resurrect one.Good maintenance involves paying as much attention to the
+                condition of the soil as to the turf itself. Turf is
+                superior to seed mixes. Most mixes require cool conditions and regular watering.</p>
+            <h6 class="col-12">Best types of grass for Australian gardens</h6>
+            <p class="col-12">Choosing the right lawn type for your garden involves considering a wide range of factors,
+                including the amount
+                of sunlight exposure, weather conditions and your own tendencies as a gardener. The six most reliable
+                turf
+                grasses for Australian gardens are:
+                Common couch, Queensland blue, Durban, Kikuyu, Sir Walter buffalo, and Saltine turf (or saltwater
+                couch), as
+                well as their cultivars.</p>
+            <div class="col-12">
+                <div class="row"><img class="col-8"
+                                      src="{{ url_for("static", filename = "images/grass_tips/lawn_01.jpg") }}" alt="">
+                </div>
+            </div>
+            <h6 class="col-12">How to maintain your lawn</h6>
+            <p class="col-12">For a successful lawn, you need a regime of mowing, feeding and aerating. Cut at the
+                highest
+                setting your mower
+                permits all year round. This leafy growth helps the lawn to smother and exclude weeds.
+                Nourish your lawn by feeding it with granular, organic poultry manure once every three months during the
+                growing
+                season. Apply it just before rain. Spray with seaweed tonic once a month.
+                As well as feeding, ensure the soil pH remains between 6 and 7. Use a pH test kit to check soil every
+                autumn,
+                which is also the best time to condition soil.
+                Use a fork, or mechanical aerator, to break up soil compaction. Aerate in spring and again in autumn to
+                help
+                water penetration and encourage strong root growth.</p>
+            <h6 class="col-12">How to establish a new lawn</h6>
+            <p class="col-12">Here are some key points that will help you establish a lawn successfully. Choose or
+                create a
+                fairly level site,
+                where water can soak in, not run off. Turf needs at least three hours of sunshine per day in winter, and
+                more in
+                summer, so it can grow thick and strong and win out over weeds.</p>
+            <div class="col-11 sub-point-container">
+                <h6 class="col-12">1. Prepare the soil for grass</h6>
+                <p class="col-12">Prepare the soil well by digging it thoroughly and working in plenty of compost or
+                    well-rotted animal manures.
+                    If necessary, apply gypsum to improve and break up heavy clay.</p>
+                <h6 class="col-12">2. Adjust soil's ph level</h6>
+                <p class="col-12">Adjust the soil's pH if needed. Turf grasses grow best in soil conditions that are
+                    neutral
+                    to slightly acidic,
+                    with a pH between 6 and 7.</p>
+                <h6 class="col-12">3. Weed lawn regularly</h6>
+                <p class="col-12">Choose a turf that is suitable for the climate in your area. Control weeds before
+                    laying
+                    lawn. This may take
+                    time with perennial weeds such as creeping oxalis and nutgrass – it took me six months of weekly
+                    sprays
+                    with an
+                    organic herbicide.</p>
+                <h6 class="col-12">4. Lay the turf</h6>
+                <p class="col-12">Install a mowing strip between the lawn and garden before laying turf. Lay grass as
+                    turf
+                    and buy quality turves
+                    from a professional supplier.</p>
+            </div>
+        </div>
+    </div>
+    <div class="back-to-top btn-success">
+        <a href="#">BACK TO TOP</a>
+    </div>
+</div>
+<footer></footer>
+</body>
+</html>
